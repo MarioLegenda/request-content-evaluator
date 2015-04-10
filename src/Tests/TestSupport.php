@@ -12,7 +12,12 @@ class TestSupport
             'basic' => array(
                 'name' => 'Mario',
                 'lastname' => 'Škrlec',
-                'age' => 28
+                'age' => 28,
+                'birth_date' => array(
+                    'day' =>  18,
+                    'month' => 06,
+                    'year' => 1986
+                )
             ),
             'complex' => array(
                 'complex-exp1' => array(

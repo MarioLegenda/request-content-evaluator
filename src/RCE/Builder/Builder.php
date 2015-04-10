@@ -23,7 +23,7 @@ class Builder implements BuilderInterface
 
         foreach ($expressions as $expr) {
             if (!$expr instanceof Expression) {
-                throw new RCEException('RCEException: Something went wrong internally in the Builder class. Please, contact the creator whitepostmail@gmail.com');
+                throw new RCEException('RCEException: RCE\Builder::build() has to expect Expression. Invalid type given');
             }
         }
 
@@ -40,7 +40,11 @@ class Builder implements BuilderInterface
                 return false;
             }
         }
-
+        
         return true;
+    }
+
+    public function getContent() {
+        return $this->content;
     }
 } 
