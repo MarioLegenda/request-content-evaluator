@@ -1,0 +1,26 @@
+{
+    "name": "mario-legenda/request-content-evaluator",
+    "description": "",
+    "keywords": [
+        "php"
+    ],
+    "homepage": "https://github.com/MarioLegenda/request-content-evaluator",
+    "type": "utility",
+    "license": "MIT",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Mario Škrlec",
+            "email": "whitepostmail@gmail.com",
+            "homepage": "https://github.com/MarioLegenda"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "phpunit/phpunit": "4.6.*",
+        "mario-legenda/php-strong-types": "0.0.1"
+    },
+    "autoload": {
+        "psr-0": {"RCE\\": "src/"}
+    }
+}
