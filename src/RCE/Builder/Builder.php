@@ -7,15 +7,23 @@ use RCE\Builder\Contracts\BuilderInterface;
 use RCE\Exceptions\RCEException;
 use RCE\Expression\Exceptions\ExpressionFailedException;
 use RCE\Expression\Expression;
+use RCE\Listeners\ErrorListener;
 
 class Builder implements BuilderInterface
 {
     private $content = array();
-
+    private $listeners = array();
     private $expressions = array();
 
     public function __construct(array $content) {
         $this->content = $content;
+
+        $this->listeners['error-listener'] = new ErrorListener(function($key, $message) {
+            return array(
+                'key' => $key,
+                'value' => $message
+            ); 
+        });
     }
 
     public function build() {
@@ -31,7 +39,7 @@ class Builder implements BuilderInterface
     }
 
     public function expr() {
-        return new Expression();
+        return new Expression($this->listeners);
     }
 
     public function evaluate() {
@@ -40,11 +48,17 @@ class Builder implements BuilderInterface
                 return false;
             }
         }
-        
+
+        var_dump($this->listeners['error-listener']->getErrors());
+        die();
         return true;
     }
 
     public function getContent() {
         return $this->content;
+    }
+
+    public function getErrors() {
+        return $this->listeners['error-listener'];
     }
 } 

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Rce",
+				"RCEException"
+			],
+			[
+				"impl",
+				"implements"
+			],
+			[
 				"re",
 				"recursiveIt	bool ƒ"
 			],
@@ -447,6 +455,54 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/Tests/RCETest.php",
+			"settings":
+			{
+				"buffer_size": 1295,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/RCE/Expression/Expression.php",
+			"settings":
+			{
+				"buffer_size": 1089,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/RCE/ContentEval.php",
+			"settings":
+			{
+				"buffer_size": 578,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/RCE/Builder/Builder.php",
+			"settings":
+			{
+				"buffer_size": 1130,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/RCE/Filters/Mutator.php",
+			"settings":
+			{
+				"buffer_size": 698,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/RCE/Filters/Contracts/MutatorInterface.php",
+			"settings":
+			{
+				"buffer_size": 109,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -480,6 +536,15 @@
 	},
 	"file_history":
 	[
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/Filters/Contracts/MutatorInterface.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/Exceptions/RCEException.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/Tests/TestSupport.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/Filters/BeInteger.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/Filters/BeString.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/Filters/BeArray.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/Filters/Mutator.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/Filters/NotEmpty.php",
+		"/C/xampp/htdocs/request-content-evaluator/src/RCE/ContentEval.php",
 		"/C/xampp/htdocs/auti/public_html/css/administrator/modules/_login.scss",
 		"/C/Users/Mario/AppData/Roaming/Sublime Text 2/Packages/GoSublime/USAGE.md",
 		"/C/xampp/htdocs/auti/src/Auti/LoginBundle/Resources/views/Login/login.html.twig",
@@ -598,16 +663,7 @@
 		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/ImageUpload.php",
 		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/Configuration/Config.php",
 		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/XmlWorkers/XmlContainer.php",
-		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/Configuration/gallery.xml",
-		"/C/xampp/htdocs/icooicoo/UPGRADE.md",
-		"/C/xampp/htdocs/icooicoo/UPGRADE-2.4.md",
-		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/Configuration/config.xml",
-		"/C/xampp/htdocs/frizer/public_html/js/admin/Galerija.js",
-		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/ImageWorkers/ImageProcessor.php",
-		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/FormWorkers/Validator.php",
-		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/FileWorkers/UploadedFile.php",
-		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/FormWorkers/Errors.php",
-		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/FileWorkers/FileExaminer.php"
+		"/C/xampp/htdocs/frizer/vendor/mario-legenda/image-uploader/src/ImageUploader/Configuration/gallery.xml"
 	],
 	"find":
 	{
@@ -625,6 +681,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
 			"ovdje",
 			"d2",
 			"()\n",
@@ -713,8 +770,175 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/Tests/RCETest.php",
+					"settings":
+					{
+						"buffer_size": 1295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1112,
+								1112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/RCE/Expression/Expression.php",
+					"settings":
+					{
+						"buffer_size": 1089,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								897,
+								897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/RCE/ContentEval.php",
+					"settings":
+					{
+						"buffer_size": 578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								552,
+								552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/RCE/Builder/Builder.php",
+					"settings":
+					{
+						"buffer_size": 1130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1090,
+								1090
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/RCE/Filters/Mutator.php",
+					"settings":
+					{
+						"buffer_size": 698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								687,
+								687
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/RCE/Filters/Contracts/MutatorInterface.php",
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -724,7 +948,7 @@
 	},
 	"input":
 	{
-		"height": 34.0
+		"height": 90.0
 	},
 	"layout":
 	{

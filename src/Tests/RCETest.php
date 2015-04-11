@@ -9,6 +9,10 @@ use RCE\Filters\BeInteger;
 use RCE\Filters\BeArray;
 use RCE\Filters\Exist;
 use RCE\Filters\Mutator;
+use RCE\Filters\OptionalExists;
+
+use RCE\Listeners\ErrorListener;
+use RCE\Expression\Expression;
 
 class RCETest extends \PHPUnit_Framework_TestCase
 {
@@ -18,7 +22,7 @@ class RCETest extends \PHPUnit_Framework_TestCase
         $this->_testSupport = new TestSupport();
     }
 
-    public function testBuilder() {
+    /*public function testSimpleBuilder() {
         $builder = new Builder($this->_testSupport->getExample('basic'));
 
         $builder->build(
@@ -35,7 +39,23 @@ class RCETest extends \PHPUnit_Framework_TestCase
         );
 
         $this->assertTrue(ContentEval::builder($builder)->isValid(),
-            'RCETest::testBuilder()-> ContentEval::isValid() returned false but had to return true');
+            'RCETest::testSimbleBuilder()-> ContentEval::isValid() returned false but had to return true');
+    }*/
+
+    public function testComplexBuilder() {
+        $builder = new Builder($this->_testSupport->getExample('complex-exp1'));
+
+        $builder->build(
+            $builder->expr()->hasTo(new Exist('filterType'), new BeString('filterType')),
+            $builder->expr()->hasTo(new Exist('key'), new BeString('key')),
+            $builder->expr()->hasTo(new OptionalExists(array(
+                'usernam' => new BeString('username'),
+                'persona' => new BeArray('personal')
+            )))
+        );
+
+        $this->assertTrue(ContentEval::builder($builder)->isValid(), 
+            'RCETest::testComplexBuilder()-> ContentEval::isValid() returned false but had to return true');
     }
 
 
