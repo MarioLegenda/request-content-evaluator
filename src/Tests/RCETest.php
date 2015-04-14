@@ -22,7 +22,7 @@ class RCETest extends \PHPUnit_Framework_TestCase
         $this->_testSupport = new TestSupport();
     }
 
-    /*public function testSimpleBuilder() {
+    public function testSimpleBuilder() {
         $builder = new Builder($this->_testSupport->getExample('basic'));
 
         $builder->build(
@@ -38,9 +38,10 @@ class RCETest extends \PHPUnit_Framework_TestCase
             }))
         );
 
-        $this->assertTrue(ContentEval::builder($builder)->isValid(),
+        $valid = ContentEval::builder($builder)->isValid();
+        $this->assertTrue($valid,
             'RCETest::testSimbleBuilder()-> ContentEval::isValid() returned false but had to return true');
-    }*/
+    }
 
     public function testComplexBuilder() {
         $builder = new Builder($this->_testSupport->getExample('complex-exp1'));
@@ -49,8 +50,8 @@ class RCETest extends \PHPUnit_Framework_TestCase
             $builder->expr()->hasTo(new Exist('filterType'), new BeString('filterType')),
             $builder->expr()->hasTo(new Exist('key'), new BeString('key')),
             $builder->expr()->hasTo(new OptionalExists(array(
-                'usernam' => new BeString('username'),
-                'persona' => new BeArray('personal')
+                'username' => new BeString('username'),
+                'personal' => new BeArray('personal')
             )))
         );
 

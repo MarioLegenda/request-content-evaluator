@@ -20,4 +20,8 @@ class BeString implements FilterInterface
 
         return true;
     }
+
+    public function getKey() {
+        return $this->key;
+    }
 } 

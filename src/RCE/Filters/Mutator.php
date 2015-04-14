@@ -25,4 +25,8 @@ class Mutator implements MutatorInterface
     	$param = $content[$this->key];
     	$content[$this->key] = $this->closure->__invoke($param);
     }
+
+    public function getKey() {
+        return $this->key;
+    }
 } 

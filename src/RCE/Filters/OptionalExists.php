@@ -57,4 +57,8 @@ class OptionalExists implements FilterInterface, ListenerInterface
 
     	return true;
     }
+
+    public function getKey() {
+        return $this->keys;
+    }
 } 

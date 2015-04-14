@@ -20,4 +20,8 @@ class Exist implements FilterInterface
 
         return true;
     }
+
+    public function getKey() {
+        return $this->key;
+    }
 } 
