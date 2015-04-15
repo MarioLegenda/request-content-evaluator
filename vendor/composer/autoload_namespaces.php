@@ -12,5 +12,4 @@ return array(
     'RCE\\' => array($baseDir . '/src'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src'),
-    'Tests\\' => array($baseDir . '/src'),
 );
