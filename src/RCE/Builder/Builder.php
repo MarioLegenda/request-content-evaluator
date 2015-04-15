@@ -16,6 +16,8 @@ class Builder implements BuilderInterface
     private $listeners = null;
 
     public function __construct(array $content, array $listeners = null) {
+
+
         $this->content = $content;
 
         $this->listeners['error-listener'] = new ErrorListener();
