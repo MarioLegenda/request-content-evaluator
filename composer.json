@@ -17,7 +17,6 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "phpunit/phpunit": "4.6.*",
         "mario-legenda/php-strong-types": "0.0.1"
     },
     "autoload": {
